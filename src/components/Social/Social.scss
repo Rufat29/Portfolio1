@@ -1,0 +1,134 @@
+@import "../../variables.scss";
+
+.social {
+  position: fixed;
+  bottom: 0;
+  width: 40px;
+  color: var(--light-state);
+
+  &.social-left {
+    left: 50px;
+  }
+  &.social-right {
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: var(--state);
+    }
+    a {
+      writing-mode: vertical-rl;
+      margin: 20px auto;
+      padding: 10px;
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: 0.2em;
+      transition: var(--transition);
+      color: var(--light-state);
+      cursor: pointer;
+      &:hover {
+        color: var(--green);
+        transform: translateY(-3px);
+      }
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    li {
+      cursor: pointer;
+      &:last-child {
+        margin-bottom: 20px;
+      }
+      a {
+        transition: var(--transition);
+        color: var(--light-state);
+        &:hover {
+          color: var(--green);
+          transform: translateY(-3px);
+        }
+        padding: 15px;
+        display: inline-block;
+        svg {
+          width: 25px;
+          height: 23px;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: var(--state);
+    }
+  }
+}
+.social-bottom {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  .social-bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    &::before {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 1px;
+      margin: 0px auto;
+      background-color: var(--state);
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 1px;
+      margin: 0px auto;
+      background-color: var(--state);
+    }
+    a {
+      transition: var(--transition);
+      color: var(--light-state);
+      &:hover {
+        color: var(--green);
+        transform: translateY(-3px);
+      }
+      padding: 15px;
+      display: inline-block;
+      svg {
+        width: 25px;
+        height: 23px;
+      }
+    }
+  }
+  p {
+    color: var(--light-state);
+    font-size: var(--fz-xxs);
+    line-height: 1;
+    padding:  10px;
+    &:last-child{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social {
+    display: none !important;
+  }
+  .social-bottom {
+    display: flex;
+  }
+}

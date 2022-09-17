@@ -1,0 +1,48 @@
+@import "../../../variables.scss";
+
+.contact {
+  max-width: 600px;
+  margin: 100px auto 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .title-wrapper {
+    margin: 10px 0px 20px;
+    h2 {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .sub-title {
+    font-size: var(--fz-xxl);
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--blue);
+    margin-bottom: 20px;
+  }
+  .text {
+    color: var(--state);
+    font-size: var(--fz-xl);
+    line-height: 1.3;
+    margin-bottom: 40px;
+  }
+  button {
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    background-color: unset;
+    transition: var(--transition);
+    color: var(--green);
+    margin: 0 5px;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: var(--fs-s);
+    padding: 1rem 1.75rem;
+    &:hover {
+      background-color: var(--resume-hover);
+      outline: none;
+    }
+  }
+}

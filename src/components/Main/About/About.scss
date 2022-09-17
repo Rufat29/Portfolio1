@@ -1,0 +1,74 @@
+@import "../../../variables";
+
+.about {
+  max-width: 900px;
+  margin: 0px auto;
+  .inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+    p {
+      max-width: 540px;
+      font-size: var(--fz-xl);
+      color: var(--state);
+      line-height: 1.3;
+    }
+    .skillset {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        gap: 0px 10px;
+        padding: 0px;
+        margin: 20px 0px 0px;
+        overflow: hidden;
+        list-style: none;
+        li {
+          position: relative;
+          margin-bottom: 10px;
+          padding-left: 20px;
+          font-size: var(--fz-xs);
+          color: var(--state);
+          &::before {
+            content: "▹";
+            position: absolute;
+            left: 0px;
+            color: var(--state);
+            font-size: var(--fz-sm);
+            line-height: 12px;
+          }
+        }
+      }
+    }
+    .about_img {
+      max-width: 300px;
+      position: relative;
+      .img-box {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background-color: transparent;
+        border: 5px solid var(--blue);
+        width: 300px;
+        height: 300px;
+        z-index: -1;
+        border-radius: 2px;
+      }
+      img {
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    .inner {
+      display: block;
+      .about_img {
+        margin: 15px auto 0 auto;
+      }
+    }
+  }
+}

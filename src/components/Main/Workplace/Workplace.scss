@@ -1,0 +1,97 @@
+@import "../../../variables.scss";
+
+.workplace {
+  max-width: 900px;
+  margin: 100px auto 0 auto;
+  .inner {
+    display: flex;
+    .tablist {
+      display: flex;
+      flex-direction: column;
+      button {
+        text-decoration: none;
+        position: relative;
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 42px;
+        padding: 0px 20px 2px;
+        border: none;
+        border-left: 2px solid var(--light-navy);
+        background-color: transparent;
+        color: var(--state);
+        font-size: var(--fz-xs);
+        text-align: left;
+        white-space: nowrap;
+        outline: none;
+        cursor: pointer;
+        font-family: inherit !important;
+        &:hover {
+          background-color: var(--some-navy);
+          color: var(--green);
+        }
+        &.active {
+          background-color: var(--some-navy);
+          color: var(--green);
+          border-left: 2px solid var(--white);
+        }
+      }
+    }
+    .tab-info {
+      margin-left: 20px;
+      padding: 0 5px;
+      h3 {
+        margin-bottom: 5px;
+        font-size: var(--fz-xxl);
+        font-weight: 500;
+        line-height: 1.3;
+        color: var(--blue);
+      }
+      p {
+        margin-bottom: 25px;
+        color: var(--light-state);
+      }
+      ul {
+        li {
+          position: relative;
+          padding-left: 30px;
+          margin-bottom: 10px;
+          color: var(--state);
+          &::before {
+            content: "▹";
+            position: absolute;
+            left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .workplace {
+      .inner {
+       flex-direction: column;
+        .tablist{
+            flex-direction: row;
+            margin-bottom: 30px;
+            overflow-x: auto;
+            padding: 5px 0;
+            button{
+                border-left: none;
+                border-bottom: 2px solid var(--light-navy);
+                justify-content: center;
+                &.active{
+                    border-left: none;
+                    border-bottom: 2px solid var(--white);
+                }
+            }
+        }
+        .tab-info{
+            margin-left: unset;
+        }
+      }
+    }
+  }
+  

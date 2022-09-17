@@ -1,0 +1,65 @@
+@import "../../../variables.scss";
+
+.projects {
+  max-width: 900px;
+  margin: 100px auto 0 auto;
+  .inner {
+    padding: 0px;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 15px;
+    .card {
+      box-shadow: 0 10px 30px -15px var(--navy-shadow);
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      height: 100%;
+      border-radius: 5px;
+      background-color: var(--some-navy);
+      transition: var(--fast-transition);
+      &:hover {
+        transform: translateY(-5px);
+      }
+      .card-inner {
+        width: 80%;
+        margin: auto;
+        padding: 30px 0 20px 0;
+
+        .card-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 35px;
+          color: var(--blue);
+          svg {
+            width: 40px;
+            height: 40px;
+            &:last-child {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+        .card-body {
+          h3 {
+            margin: 0px 0px 10px;
+            color: var(--blue);
+            font-size: var(--fz-xl);
+            font-weight: 600;
+            line-height: 1.1;
+          }
+          p {
+            color: var(--light-state);
+            font-size: var(--fz-md);
+            min-height: 150px;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+  }
+}
