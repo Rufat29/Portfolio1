@@ -10,7 +10,6 @@ import React, { useState } from "react";
 import Contact from "./Contact/Contact";
 
 const Main = (props) => {
-  const [childData, setChildData] = useState("");
   return (
     <main>
       <div className="container">
@@ -19,9 +18,8 @@ const Main = (props) => {
         <Workplace />
         <Project />
         <Contact />
-        <Login passChildData={setChildData} />
         <Social />
-        <Notification childData={childData} />
+        <Notification childData={props.childData} />
       </div>
     </main>
   );

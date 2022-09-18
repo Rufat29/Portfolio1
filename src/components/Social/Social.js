@@ -51,9 +51,7 @@ const Social = () => {
           </a>
         </div>
         <p>Built by Rufat Karimli</p>
-        <p>
-          Copyright &copy; { year } All Rights Reserved
-        </p>
+        <p>Copyright &copy; {year} All Rights Reserved</p>
       </div>
     </>
   );

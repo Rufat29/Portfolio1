@@ -1,7 +1,20 @@
 body {
   margin: 0;
-  font-family: 'MuseoModerno', cursive !important;
+  font-family: "MuseoModerno", cursive !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth !important;
+}
 
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8892b0;
+  border-radius: 8px;
 }

@@ -1,8 +1,10 @@
 import "./Login.scss";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Login = (props) => {
-  const [name, setName] = useState();
+  const [name, setName] = useState(" ");
+  const [error, setError] = useState();
   const [isActive, setIsActive] = useState(false);
 
   const handleChange = (event) => {
@@ -20,7 +22,10 @@ const Login = (props) => {
       <div className="login-inner">
         <h3>Please enter your name</h3>
         <input type="text" placeholder="Name" onChange={handleChange} />
-        <button onClick={() => buttonHandler()}>Confirm</button>
+        <Link to={"/home"} onClick={() => buttonHandler()}>
+          Confirm
+        </Link>
+        <p>{error}</p>
       </div>
     </div>
   );

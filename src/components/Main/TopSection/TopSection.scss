@@ -8,19 +8,19 @@
   h1 {
     color: var(--green);
     font-weight: 400;
-    font-size: 25px;
+    font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
     margin: 0px 0px 30px 4px;
   }
   h2 {
     color: var(--blue);
     font-weight: 600;
     line-height: 1.1;
-    font-size: 65px;
+    font-size: clamp(40px, 8vw, 80px);
   }
   h3 {
     color: var(--state);
     font-weight: 600;
-    font-size: 65px;
+    font-size: clamp(40px, 8vw, 80px);
     line-height: 0.9;
     margin-top: 10px;
   }
@@ -45,6 +45,7 @@
   .hero {
     flex-direction: column;
     margin-top: 120px;
+    justify-content: unset;
     .illustration {
       width: 100%;
     }

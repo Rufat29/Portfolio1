@@ -117,18 +117,31 @@
     color: var(--light-state);
     font-size: var(--fz-xxs);
     line-height: 1;
-    padding:  10px;
-    &:last-child{
+    padding: 10px;
+    &:last-child {
       margin-bottom: 20px;
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .social {
     display: none !important;
   }
   .social-bottom {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .social-bottom {
+    .social-bottom-inner {
+      &::before {
+        width: 20px;
+      }
+      &::after {
+        width: 20px;
+      }
+    }
   }
 }

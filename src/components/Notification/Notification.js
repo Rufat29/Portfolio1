@@ -12,6 +12,8 @@ const Notification = (props) => {
   const [isNotificationOpen, setNotificationOpen] = useState(true);
   const [actionMessage, setActionMessage] = useState("Open");
 
+  const isEmpty = props?.childData?.trim().length === 0;
+
   const NotificationHandler = () => {
     setNotificationOpen(!isNotificationOpen);
     setActionMessage(isNotificationOpen ? "Open" : "Close");
@@ -31,7 +33,7 @@ const Notification = (props) => {
       </button> */}
       <div className="notification-content">
         <div className="notification-header">
-          <h1>Hello {props.childData} </h1>
+          <h1>Hello {!isEmpty ? props.childData : "Dear friend"} </h1>
           <img src={Hello} />
         </div>
         <h2>Welcome to my website.</h2>

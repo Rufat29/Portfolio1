@@ -1,11 +1,13 @@
 import React, { useState, useRef } from "react";
 import "./App.css";
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { useScrollDirection } from "react-use-scroll-direction";
 import Main from "./components/Main/Main";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./components/Main/Login/Login";
 
 function App() {
+  const [childData, setChildData] = useState("");
   // const [direction, setDirection] = React.useState(Boolean);
   // const { isScrollingUp, isScrollingDown } = useScrollDirection();
 
@@ -16,9 +18,21 @@ function App() {
 
   return (
     <div className="App">
-      <Header></Header>
-      <Main></Main>
-      {/* <Footer></Footer> */}
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Login passChildData={setChildData} />} />
+
+          <Route
+            path="home"
+            element={
+              <>
+                <Header />
+                <Main childData={childData}></Main>
+              </>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

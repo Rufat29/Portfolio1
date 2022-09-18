@@ -54,7 +54,7 @@ const Project = () => {
     },
   ];
   return (
-    <section className="projects">
+    <section className="projects" id="project">
       <Title count={aboutCount} title={aboutText}></Title>
       <div className="inner">
         {projects.map((project) => (

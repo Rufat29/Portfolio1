@@ -32,3 +32,14 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .title-wrapper{
+    .title{
+      font-size: var(--fz-xl);
+      &::after{
+        width: 100%;
+      }
+    }
+  }
+}

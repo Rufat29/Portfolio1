@@ -34,9 +34,22 @@
         &.active {
           background-color: var(--some-navy);
           color: var(--green);
-          border-left: 2px solid var(--white);
+          border-left: 2px solid var(--green);
         }
       }
+      &::-webkit-scrollbar {
+        height: 2px !important;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--blue);
+        border-radius: 8px;
+      }
+      
     }
     .tab-info {
       margin-left: 20px;
@@ -84,7 +97,7 @@
                 justify-content: center;
                 &.active{
                     border-left: none;
-                    border-bottom: 2px solid var(--white);
+                    border-bottom: 2px solid var(--green);
                 }
             }
         }

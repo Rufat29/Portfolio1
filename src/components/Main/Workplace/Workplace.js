@@ -51,7 +51,7 @@ const Workplace = () => {
   );
 
   return (
-    <section className="workplace">
+    <section className="workplace" >
       <Title count={workplaceCount} title={workplaceText}></Title>
       <div className="inner">
         <div className="tablist">
