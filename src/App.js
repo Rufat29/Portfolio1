@@ -1,9 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
-import { useScrollDirection } from "react-use-scroll-direction";
+// import { useScrollDirection } from "react-use-scroll-direction";
 import Main from "./components/Main/Main";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Login from "./components/Main/Login/Login";
 
 function App() {
@@ -20,7 +20,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route index element={<Login passChildData={setChildData} />} />
+          <Route path="/" element={<Navigate to="/login" />} />
+
+          <Route
+            path="/login"
+            element={<Login passChildData={setChildData} />}
+          />
 
           <Route
             path="home"
