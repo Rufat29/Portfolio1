@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Login = (props) => {
   const [name, setName] = useState(" ");
-  const [error, setError] = useState();
+  // const [error, setError] = useState();
   const [isActive, setIsActive] = useState(false);
 
   const handleChange = (event) => {
@@ -25,7 +25,7 @@ const Login = (props) => {
         <Link to={"/home"} onClick={() => buttonHandler()}>
           Confirm
         </Link>
-        <p>{error}</p>
+        {/* <p>{error}</p> */}
       </div>
     </div>
   );

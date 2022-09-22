@@ -14,7 +14,7 @@ const Contact = (props) => {
         is always open. Whether you have a question or just want to say hi, I’ll
         try my best to get back to you!
       </p>
-      <a href="mailto:kerimli2002r@gmail.com" target="_blank">
+      <a href="mailto:kerimli2002r@gmail.com" target="_blank" rel="noreferrer">
         
         <button>Say Hello</button>
       </a>

@@ -14,39 +14,39 @@ const Social = () => {
       <div className="social social-left">
         <ul>
           <li>
-            <a href="https://github.com/Rufat29" target="_blank">
+            <a href="https://github.com/Rufat29" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/rufat-karimli/"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/rufat29/" target="_blank">
+            <a href="https://www.instagram.com/rufat29/" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </li>
         </ul>
       </div>
       <div className="social social-right">
-        <a href="mailto:kerimli2002r@gmail.com" target="_blank">
+        <a href="mailto:kerimli2002r@gmail.com" target="_blank" rel="noreferrer">
           kerimli2002r@gmail.com
         </a>
       </div>
       <div className="social-bottom">
         <div className="social-bottom-inner">
-          <a href="https://github.com/Rufat29" target="_blank">
+          <a href="https://github.com/Rufat29" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://www.linkedin.com/in/rufat-karimli/" target="_blank">
+          <a href="https://www.linkedin.com/in/rufat-karimli/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
-          <a href="https://www.instagram.com/rufat29/" target="_blank">
+          <a href="https://www.instagram.com/rufat29/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>

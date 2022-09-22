@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = (props) => {
-  const down = props.down;
+  // const down = props.down;
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
@@ -29,16 +29,16 @@ const Navbar = (props) => {
           <div className="right-nav">
             <ol>
               <li>
-                <a>About</a>
+                <a href="e">About</a>
               </li>
               <li>
-                <a>Experience</a>
+                <a href="e">Experience</a>
               </li>
               <li>
-                <a>Work</a>
+                <a href="r">Work</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="r">Contact</a>
               </li>
               <button>Resume</button>
             </ol>

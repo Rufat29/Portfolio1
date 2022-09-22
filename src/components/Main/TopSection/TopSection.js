@@ -15,7 +15,7 @@ const TopSection = (props) => {
           </p>
         </div>
         <div className="illustration">
-          <img src={Profile} />
+          <img src={Profile} alt="Profile"/>
         </div>
       </section>
   );

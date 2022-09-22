@@ -1,23 +1,23 @@
 import "./Notification.scss";
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faGithub,
+//   faInstagram,
+//   faLinkedinIn,
+// } from "@fortawesome/free-brands-svg-icons";
 import Hello from "../../assets/hello.svg";
 
 const Notification = (props) => {
   const [isNotificationOpen, setNotificationOpen] = useState(true);
-  const [actionMessage, setActionMessage] = useState("Open");
+  // const [actionMessage, setActionMessage] = useState("Open");
 
   const isEmpty = props?.childData?.trim().length === 0;
 
-  const NotificationHandler = () => {
-    setNotificationOpen(!isNotificationOpen);
-    setActionMessage(isNotificationOpen ? "Open" : "Close");
-  };
+  // const NotificationHandler = () => {
+  //   setNotificationOpen(!isNotificationOpen);
+  //   setActionMessage(isNotificationOpen ? "Open" : "Close");
+  // };
 
   if (props.childData) {
     setTimeout(function () {
@@ -34,7 +34,7 @@ const Notification = (props) => {
       <div className="notification-content">
         <div className="notification-header">
           <h1>Hello {!isEmpty ? props.childData : "Dear friend"} </h1>
-          <img src={Hello} />
+          <img src={Hello} alt="Hello"/>
         </div>
         <h2>Welcome to my website.</h2>
         {/* <div className="social-notifiaction">
