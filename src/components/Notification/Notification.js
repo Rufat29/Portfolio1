@@ -10,16 +10,12 @@ import Hello from "../../assets/hello.svg";
 
 const Notification = (props) => {
   const [isNotificationOpen, setNotificationOpen] = useState(true);
-  // const [actionMessage, setActionMessage] = useState("Open");
+  const [welcomeText, setWelcomeText] = useState("Dear friend");
 
   const isEmpty = props?.childData?.trim().length === 0;
 
-  // const NotificationHandler = () => {
-  //   setNotificationOpen(!isNotificationOpen);
-  //   setActionMessage(isNotificationOpen ? "Open" : "Close");
-  // };
-
-  if (props.childData) {
+  const text = isEmpty ? welcomeText : props.childData;
+  if (text) {
     setTimeout(function () {
       setNotificationOpen(false);
     }, 5000);
@@ -33,8 +29,8 @@ const Notification = (props) => {
       </button> */}
       <div className="notification-content">
         <div className="notification-header">
-          <h1>Hello {!isEmpty ? props.childData : "Dear friend"} </h1>
-          <img src={Hello} alt="Hello"/>
+          <h1>Hello {text} </h1>
+          <img src={Hello} alt="Hello" />
         </div>
         <h2>Welcome to my website.</h2>
         {/* <div className="social-notifiaction">

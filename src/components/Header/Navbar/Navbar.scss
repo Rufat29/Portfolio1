@@ -32,20 +32,20 @@
     padding: 0 50px;
   }
   .brand-name {
-    width: 55px;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    border: 1px solid var(--blue);
-    transform: rotate(45deg);
+    // width: 55px;
+    // height: 55px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // text-decoration: none;
+    // border: 1px solid var(--blue);
+    // transform: rotate(45deg);
     p {
       color: var(--white);
-      font-size: 25px;
+      font-size: 35px;
       font-weight: 600;
       letter-spacing: 2px;
-      transform: rotate(-45deg);
+      // transform: rotate(-45deg);
     }
   }
   .hamburger {
@@ -123,44 +123,52 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navigation-container {
-    width: 80% !important;
-    margin: auto;
-    padding: unset !important;
-    .hamburger {
-      display: block !important;
+  .navigation {
+    height: 35px;
+    .brand-name {
+      p {
+        font-size: 29px;
+      }
     }
-    .navigation-menu {
-      &.expanded {
-        .right-nav {
-          ol {
-            transform: translateX(0%);
-            li {
-              a {
-                padding: 1.5rem 0;
+    .navigation-container {
+      width: 80% !important;
+      margin: auto;
+      padding: unset !important;
+      .hamburger {
+        display: block !important;
+      }
+      .navigation-menu {
+        &.expanded {
+          .right-nav {
+            ol {
+              transform: translateX(0%);
+              li {
+                a {
+                  padding: 1.5rem 0;
+                }
               }
             }
           }
         }
-      }
-      ol {
-        transform: translateX(-100%);
-        position: absolute;
-        top: 100px;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        height: calc(100vh - 77px);
-        background-color: var(--navy);
-        z-index: 100;
-        li {
-          text-align: center;
-          margin: 0;
+        ol {
+          transform: translateX(-100%);
+          position: absolute;
+          top: 75px;
+          left: 0;
+          flex-direction: column;
+          width: 100%;
+          height: calc(100vh - 77px);
+          background-color: var(--navy);
+          z-index: 100;
+          li {
+            text-align: center;
+            margin: 0;
 
-          a {
-            color: var(--white);
-            width: 100%;
-            padding: 1.5rem 0;
+            a {
+              color: var(--nav-items);
+              width: 100%;
+              padding: 1.5rem 0;
+            }
           }
         }
       }

@@ -9,7 +9,7 @@ const TopSection = (props) => {
           <h2>Karimli Rufat</h2>
           <h3>I build things for the web.</h3>
           <p>
-            I’m a software engineer specializing in building (and occasionally
+            I’m a front-end developer specializing in building (and occasionally
             designing) exceptional digital experiences. Currently, I’m focused
             on building accessible, human-centered products at Kapital Bank.
           </p>

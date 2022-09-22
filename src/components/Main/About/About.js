@@ -12,19 +12,12 @@ const About = () => {
         <div>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live
-              on the internet. My interest in web development started back in
-              2012 when I decided to try editing custom Tumblr themes — turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS!
+              Hello! My name is Rufat and I enjoy creating things that live on
+              the internet. My interest in web development started back in 2020
+              when I decided to try editing custom landing pages — this taught
+              me a lot about HTML & CSS!
             </p>
-            <p>
-              Hello! My name is Brittany and I enjoy creating things that live
-              on the internet. My interest in web development started back in
-              2012 when I decided to try editing custom Tumblr themes — turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS!
-            </p>
+            <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
           <div className="skillset">
             <ul>
@@ -39,7 +32,7 @@ const About = () => {
           </div>
         </div>
         <div className="about_img">
-          <img src={Profile}  alt="Profile" />
+          <img src={Profile} alt="Profile" />
         </div>
       </div>
     </section>
