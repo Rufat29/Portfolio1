@@ -81,24 +81,25 @@
           margin: 0 5px;
           cursor: pointer;
           font-size: var(--fs-s);
-        }
-        a {
-          display: inline-block;
-          padding: 10px;
-          text-decoration: none;
-          text-decoration-skip-ink: auto;
-          position: relative;
-          color: var(--nav-items);
-          transition: var(--transition);
-          &:before {
-            content: "0" counter(item) ".";
-            margin-right: 5px;
-            color: var(--white);
-            font-size: var(--fz-xxs);
-            text-align: right;
-          }
-          &:hover {
-            color: var(--white);
+
+          a {
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            text-decoration-skip-ink: auto;
+            position: relative;
+            color: var(--nav-items);
+            transition: var(--transition);
+            &:before {
+              content: "0" counter(item) ".";
+              margin-right: 5px;
+              color: var(--white);
+              font-size: var(--fz-xxs);
+              text-align: right;
+            }
+            &:hover {
+              color: var(--white);
+            }
           }
         }
       }

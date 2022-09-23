@@ -13,44 +13,29 @@ const Project = () => {
     {
       title: "Kendigetir",
       description:
-        "Əsasən online olaraq hər təmiz məhsul axtaran evə çatdırılma etməyi düşünürük. Fəaliyyətə başlayandan bir çox kəndli artıq öz təsərüffatını genişləndirib və bizim müştərilərin təlabatını ödəməyə çalışır.",
+        "Mainly designed for home delivery to every pure product seeker online. Since the beginning of the activity, many villagers have already expanded their farms and are trying to meet the demands of our customers.",
       id: 1,
-      link: "",
+      link: "https://kendigetir.az/",
     },
     {
       title: "Monyo",
       description:
         "Contactless and fast service with QR menus's digitize the restaurant's menu with a QR code and become a part of the digital world.",
       id: 2,
-      link: "",
+      link: "https://monyo.az/qrcode#about",
     },
     {
-      title: "Kredit evi",
-      description:
-        "Contactless and fast service with QR menus's digitize the restaurant's menu with a QR code and become a part of the digital world.",
+      title: "Monyo Menu",
+      description: "Internal menu of each restaurant provided by Monyo",
       id: 3,
-      link: "",
+      link: "https://monyo.az/?r=ozsut#general-menu",
     },
     {
-      title: "Kendigetir",
+      title: "Kredit Home",
       description:
-        "Əsasən online olaraq hər təmiz məhsul axtaran evə çatdırılma etməyi düşünürük. Fəaliyyətə başlayandan bir çox kəndli artıq öz təsərüffatını genişləndirib və bizim müştərilərin təlabatını ödəməyə çalışır.",
+        "As a Kredit Home, our main activity is providing loans with gold jewelry, telephones, tablets, computers, car collateral and car leasing.",
       id: 4,
-      link: "",
-    },
-    {
-      title: "Monyo",
-      description:
-        "Contactless and fast service with QR menus's digitize the restaurant's menu with a QR code and become a part of the digital world.",
-      id: 5,
-      link: "",
-    },
-    {
-      title: "Kredit evi",
-      description:
-        "Contactless and fast service with QR menus's digitize the restaurant's menu with a QR code and become a part of the digital world.",
-      id: 6,
-      link: "",
+      link: "https://www.kreditevi.az/",
     },
   ];
   return (
@@ -62,9 +47,11 @@ const Project = () => {
             <div className="card-inner">
               <div className="card-header">
                 <FontAwesomeIcon icon={faFolder}></FontAwesomeIcon>
-                <FontAwesomeIcon
-                  icon={faArrowUpRightFromSquare}
-                ></FontAwesomeIcon>
+                <a href={project.link} target="_blank">
+                  <FontAwesomeIcon
+                    icon={faArrowUpRightFromSquare}
+                  ></FontAwesomeIcon>
+                </a>
               </div>
               <div className="card-body">
                 <h3>{project.title}</h3>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import Resume from "../../../documents/Resume.pdf";
 
 const Navbar = (props) => {
   // const down = props.down;
@@ -40,7 +41,9 @@ const Navbar = (props) => {
               <li>
                 <a href="r">Contact</a>
               </li>
-              <button>Resume</button>
+              <a href={Resume} target="_blank" rel="noreferrer">
+                <button>Resume</button>
+              </a>
             </ol>
           </div>
         </div>
